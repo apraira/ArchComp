@@ -7,12 +7,12 @@
 start:
 stc
 ld r5
-xch r10
+xch r1
 ld r5
 sub r7
 xch r5
 ld r4
-xch r9
+xch r0
 ld r4
 sub r6
 xch r4
@@ -22,14 +22,6 @@ jun start
 
 
 finish:
-ld r10
-xch r1
-ld r9
-xch r0
-
-;bersiin
 fim r4 $00
-fim r6 $00
-fim r8 $00
-fim r10 $00
+jms $3ff
 nop

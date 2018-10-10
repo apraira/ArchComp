@@ -1,0 +1,35 @@
+
+;cara dapet remainder
+;mengulang pengurangan hingga gabisa substract number itu lagi
+;berarti kalo disini sampe carrynya itu 0
+
+
+start:
+stc
+ld r5
+xch r10
+ld r5
+sub r7
+xch r5
+ld r4
+xch r9
+ld r4
+sub r6
+xch r4
+
+jcn c0 finish
+jun start
+
+
+finish:
+ld r10
+xch r1
+ld r9
+xch r0
+
+;bersiin
+fim r4 $00
+fim r6 $00
+fim r8 $00
+fim r10 $00
+nop
